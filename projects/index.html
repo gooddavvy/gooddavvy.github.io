@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@GoodnessDavid</title>
+    <link href="/water.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="/my-avatar.jpeg" rel="icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">
+        <img src="/my-avatar.jpeg" width="30" height="30" />
+        <span>@GoodnessDavid</span>
+      </a>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger">☰</label>
+        <div class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="index.html">Projects</a></li>
+          <li class="nav-dropdown">
+            <a href="/#contact">Contact</a>
+            <ul class="dropdown">
+              <li><a href="https://replit.com/@GoodnessDavid" target="_blank">Replit</a></li>
+              <li><a href="https://github.com/gooddavvy" target="_blank">GitHub</a></li>
+              <li><a href="https://codepen.io/gooddavvy" target="_blank">CodePen</a></li>
+              <li><a href="https://codesandbox.io/u/gooddavvy" target="_blank">CodeSanbox</a></li>
+              <li><a href="mailto:gooddavvy@gmail.com" target="_blank">Email</a></li>
+            </ul>
+          </li>
+          <li><a href="/hire-me">Hire Me</a></li>
+        </div>
+      </ul>
+    </nav>
+    <main>
+      <h1>My Projects</h1>
+      <p>On this page, you can view a showcase of my projects. Be sure to check them out by clicking on them and click the like button on each project (each one is on Replit, so a repl).</p>
+      <div class="projects card-content"></div>
+    </main>
+    <div class="footer">&copy; <span class="date"></span> <a href="https://replit.com/@GoodnessDavid" target="_blank">@GoodnessDavid</a></div>
+    <script>
+      var date = new Date();
+      var dateEl = document.querySelector(".date");
+      dateEl.textContent = date.getFullYear();
+    </script>
+    <script>
+      var projects = [
+        {
+          image: "https://github.com/gooddavvy/markdown-repository-snapshot-app/raw/main/images/markdown-repo-snapApp_example2.png",
+          name: "Markdown Repository Snapshot Application",
+          url: "https://github.com/gooddavvy/markdown-repository-snapshot-app",
+          badges: ["NEW", "Regularly Updated"],
+          tags: ["github", "markdown", "snapshot", "snapshots", "github-repository", "github-repositories"],
+          desc: "An app that you input a GitHub repository's URL into, alongside ignore files&folders, and it outputs a downloadable `output.md` file"
+        },
+      ];
+
+      var main = document.body.querySelector("main");
+      var projectsEl = main.querySelector(".projects");
+      projects.forEach(function ({ name, image, url, badges, desc, tags }) {
+        projectsEl.innerHTML += `
+          <a href="${url}" target="_blank">
+           <div class="card">
+             <img src="${image}" alt="${name}" />
+             <h2 class="title">
+               <span>${name}</span>
+               ${badges.map(badge => { return `<span class="badge">${badge}</span>`; })}
+             </h2>
+             <p>${desc}</p>
+             <p>
+              ${tags.map(tag => { return `#${tag} `; })}
+             </p>
+           </div>
+          </a>
+       `;
+      });
+    </script>
+    <script src="/typewriter.js"></script>
+  </body>
+</html>

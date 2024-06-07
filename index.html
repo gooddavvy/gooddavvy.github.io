@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwesomDev @gooddavvy. Looks like another awesome developer has arrived.</title>
+    <link href="water.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="images/my-avatar.jpeg" rel="icon" />
+    <style>
+        @keyframes flash {
+          0% {
+            border-right: 0.08em var(--foreground-primary-color) solid;
+          }
+        
+          50% {
+            border-right: 0.08em transparent solid;
+          }
+        
+          100% {
+            border-right: 0.08em var(--foreground-primary-color) solid;
+          }
+        }
+  
+    .glide-container {
+    	display: flex;
+    	justify-content: center;
+    }
+    
+    .glide-container a:after {
+    	border-bottom: none !important;
+    }
+    
+    i.glide-svg {
+      color: var(--accent-primary-color);
+    	font-size: 30px !important;	
+    	margin-top: 50px;
+    	cursor: pointer;
+    	animation: glide 2s infinite;
+    	position: relative;
+    	transition-duration: 0.4s;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    
+    @keyframes glide {
+    	0% { bottom: 0px; }
+    	50% { bottom: -15px; }
+    	100% { bottom: 0px; }
+    }
+    
+    i:hover {
+    	transform: scale(1.1);
+    	color: var(--navbarLinkColorHover);
+    }
+    
+    .social-media {
+    	display: flex;
+      align-items: space-around;
+    }
+    
+    .social-media i, .social-media svg {
+      margin-right: 25px;
+    }
+    
+    i {
+      font-size: 35px;
+      color: var(--accent-primary-color);
+      transition: 0.3s;
+    }
+    
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: var(--accent-primary-color);
+      transition: 0.3s;
+    }
+    
+    svg:hover {
+      transform: scale(1.1);
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href=".">
+        <img src="images/my-avatar.jpeg" width="30" height="30" />
+        <span>AwesomDev @gooddavvy</span>
+      </a>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger">☰</label>
+        <div class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="projects">Projects</a></li>
+          <li class="nav-dropdown">
+            <a href="/#contact">Contact</a>
+            <ul class="dropdown">
+              <li><a href="https://replit.com/@GoodnessDavid" target="_blank">Replit</a></li>
+              <li><a href="https://github.com/gooddavvy" target="_blank">GitHub</a></li>
+              <li><a href="https://codepen.io/gooddavvy" target="_blank">CodePen</a></li>
+              <li><a href="https://codesandbox.io/u/gooddavvy" target="_blank">CodeSandbox</a></li>
+              <li><a href="mailto:gooddavvy@gmail.com" target="_blank">Email</a></li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <main>
+      <section id="start" class="start">
+        <h1 class="typewrite" data-period="2000" data-type="[&quot;AwesomDev @gooddavvy&quot;, &quot;An awesome programmer&quot;, &quot;A software-backend developer&quot;, &quot;A simple game creator&quot;, &quot;A fine and nice soccer player&quot;, &quot;And an aspiring astronomer&quot;]"></h1>
+        <br /><br />
+        <p>
+          Hi, my name is David Akins, and I am an astronomer wannabe who loves to code. I create stunning websites, simple games (extremly simple), and awesome templates & maybe tutorials. You can <a href="/#about">learn more about me</a>, view <a href="/projects">a showcase of my projects</a>, <a href="/hire-me">hire me</a>, and contact me on <a href="/#contact">my socials</a>.
+        </p>
+      </section>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <section id="about" class="about">
+        <h1>About Me</h1>
+        <br /><br />
+        <p>
+          My name is David Akins, and I am an astronomer wannabe who loves to code. I create stunning websites, simple games (extremely simple), and awesome templates & maybe tutorials. I have a popular nickname: "AwesomDev". And I use the following languages:
+        </p>
+          <p>1. Python (I've quit using this) - You can use this for anything, like AI</p>
+          <p>2. HTML   (the language that makes up the web) - I use this for Flask apps and sometimes Express.js servers like this one.</p>
+          <p>3. React  (built for user interfaces) - I use this when my apps are really big.</p>
+          <p>4. Next.js(makes  using React easier than ever) - I really like this, it solves some of the issues with React.</p>
+          <p>5. Solid.js(another user interface framework similar to React) - Me and my dad
+            <i style="font-size: 20px !important;">really</i>
+            like this one, because there are no Hook Rules like the ones in React. Me and my dad tried to build
+            <a href="https://github.com/asolpshinning/carbon-solid" target="_blank">a package that is Carbon Charts for Solid.js</a>
+            -- and it worked!
+          </p>
+          <p>6. TypeScript(makes using JavaScript more "typish") - I want to always use this, it makes my feel more "typish" when I am coding.</p>
+          <p>7. JavaScript - Duh, you need to know this for TypeScript, it literally compiles back into JavaScript.</p>
+          <p>8. GoLang - I recently started learning this laguage, so you ask me a question about it, if it is advanced in GoLang, I may not be able to answer it.</p>
+          <p>9. ChainGPT - This is a GoLang package my dad created. Learn everything about it <a href="https://github.com/asolpshinning/chaingpt#readme" target="_blank">here</a>! I may soon help my dad with it.</p>
+        <p>
+          I really like coding so much, but I also like playing soccer, basketball, table tennis, and the piano. I play them mostly for fun, but sometimes I play them competitively.
+        </p>
+        <p>
+          I am from Akron, Ohio, United States, but I like to speak, write, type, and hear British. For example, instead of typing "favorite", I like to type "favourite".
+        </p>
+        <!-- <div class="alert beta-alert" id="beta-alert">
+          The <a href="/hire-me" style="color: blue !important">Hire Me page</a> is going BETA! Go hire me for a project real quick, then come back here.
+        </div> -->
+      </section>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <section id="contact" class="contact">
+        <h1>Contact</h1>
+        <br /><br />
+        <p>Contact me on my social media. I'm most active on GitHub.</p>
+        <br /><br />
+        <div class="social-media">
+          <a href="https://codepen.io/gooddavvy" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+          <a href="mailto:gooddavvy@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+  </svg></a>
+          <a href="https://replit.com/@GoodnessDavid" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><defs></defs><path d="M7 5.5C7 4.67157 7.67157 4 8.5 4H15.5C16.3284 4 17 4.67157 17 5.5V12H8.5C7.67157 12 7 11.3284 7 10.5V5.5Z" fill="var(--accent-primary-color)"></path><path d="M17 12H25.5C26.3284 12 27 12.6716 27 13.5V18.5C27 19.3284 26.3284 20 25.5 20H17V12Z" fill="var(--accent-primary-color)"></path><path d="M7 21.5C7 20.6716 7.67157 20 8.5 20H17V26.5C17 27.3284 16.3284 28 15.5 28H8.5C7.67157 28 7 27.3284 7 26.5V21.5Z" fill="var(--accent-primary-color)"></path></svg></a>
+          <a href="https://github.com/gooddavvy" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </section>
+    </main>
+    <div class="footer">&copy; <span class="date"></span> <a href="https://replit.com/@GoodnessDavid" target="_blank">@GoodnessDavid</a></div>
+    <script>
+      var date = new Date();
+      var dateEl = document.querySelector(".date");
+      dateEl.textContent = date.getFullYear();
+    </script>
+    <script src="typewriter.js"></script>
+  </body>
+</html>
