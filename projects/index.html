@@ -12,34 +12,34 @@
     <nav class="navbar">
       <a href="/">
         <img src="/images/my-avatar.jpeg" width="30" height="30" />
-        <span>@GoodnessDavid</span>
+        <span>AwesomDev @gooddavvy</span>
       </a>
       <ul class="nav-links">
         <input type="checkbox" id="checkbox_toggle"/>
         <label for="checkbox_toggle" class="hamburger">☰</label>
         <div class="menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="index.html">Projects</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="#">Projects</a></li>
           <li class="nav-dropdown">
             <a href="/#contact">Contact</a>
             <ul class="dropdown">
-              <li><a href="https://replit.com/@GoodnessDavid" target="_blank">Replit</a></li>
               <li><a href="https://github.com/gooddavvy" target="_blank">GitHub</a></li>
+              <li><a href="https://replit.com/@GoodnessDavid" target="_blank">Replit</a></li>
               <li><a href="https://codepen.io/gooddavvy" target="_blank">CodePen</a></li>
               <li><a href="https://codesandbox.io/u/gooddavvy" target="_blank">CodeSanbox</a></li>
               <li><a href="mailto:gooddavvy@gmail.com" target="_blank">Email</a></li>
             </ul>
           </li>
-          <li><a href="/hire-me">Hire Me</a></li>
+          <!-- <li><a href="/hire-me">Hire Me</a></li> -->
         </div>
       </ul>
     </nav>
     <main>
       <h1>My Projects</h1>
-      <p>On this page, you can view a showcase of my projects. Be sure to check them out by clicking on them and click the like button on each project (each one is on Replit, so a repl).</p>
+      <p>On this page, you can view a showcase of my projects. Be sure to check them out by clicking on them and starring each project (each one is on GitHub, so a repository).</p>
       <div class="projects card-content"></div>
     </main>
-    <div class="footer">&copy; <span class="date"></span> <a href="https://replit.com/@GoodnessDavid" target="_blank">@GoodnessDavid</a></div>
+    <div class="footer">&copy; <span class="date"></span> <a href="https://github.com/gooddavvy" target="_blank">AwesomDev @gooddavvy</a></div>
     <script>
       var date = new Date();
       var dateEl = document.querySelector(".date");
@@ -54,6 +54,22 @@
           badges: ["NEW", "Regularly Updated"],
           tags: ["github", "markdown", "snapshot", "snapshots", "github-repository", "github-repositories"],
           desc: "An app that you input a GitHub repository's URL into, alongside ignore files&folders, and it outputs a downloadable `output.md` file"
+        },
+        {
+          image: "https://github.com/gooddavvy/cmd-ai-cli/raw/main/cmd-ai-cli_example-usage.png",
+          name: "Markdown Repository Snapshot Application",
+          url: "https://github.com/gooddavvy/cmd-ai-cli",
+          badges: ["NEW"],
+          tags: ["ai-cli", "cmd-ai", "cmd-ai-cli"],
+          desc: "An experimental CLI that has a command which lets you start a chat with CMD AI--`cmd-ai`."
+        },
+        {
+          image: "no-image",
+          name: "GamificationJS",
+          url: "https://github.com/gooddavvy/gamification-js",
+          badges: ["NEW", "Occasionally Updated"],
+          tags: ["creative-coding", "gamification", "3d", "gamification-framework"],
+          desc: "GamificationJS is a 3D Node.js library for creative coding. It makes your web apps get gamified, interactive, & fun, looking like animation."
         },
       ];
 
@@ -70,7 +86,7 @@
              </h2>
              <p>${desc}</p>
              <p>
-              ${tags.map(tag => { return `#${tag} `; })}
+              ${tags.map(tag => { return `#${tag}`; })}
              </p>
            </div>
           </a>
