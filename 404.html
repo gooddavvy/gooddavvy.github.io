@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwesomDev @gooddavvy. Looks like another awesome developer has arrived.</title>
+    <link href="water.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="/images/my-avatar.jpeg" rel="icon" />
+    <style>
+        @keyframes flash {
+          0% {
+            border-right: 0.08em var(--foreground-primary-color) solid;
+          }
+        
+          50% {
+            border-right: 0.08em transparent solid;
+          }
+        
+          100% {
+            border-right: 0.08em var(--foreground-primary-color) solid;
+          }
+        }
+  
+    .glide-container {
+    	display: flex;
+    	justify-content: center;
+    }
+    
+    .glide-container a:after {
+    	border-bottom: none !important;
+    }
+    
+    i.glide-svg {
+      color: var(--accent-primary-color);
+    	font-size: 30px !important;	
+    	margin-top: 50px;
+    	cursor: pointer;
+    	animation: glide 2s infinite;
+    	position: relative;
+    	transition-duration: 0.4s;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    
+    @keyframes glide {
+    	0% { bottom: 0px; }
+    	50% { bottom: -15px; }
+    	100% { bottom: 0px; }
+    }
+    
+    i:hover {
+    	transform: scale(1.1);
+    	color: var(--navbarLinkColorHover);
+    }
+    
+    .social-media {
+    	display: flex;
+      align-items: space-around;
+    }
+    
+    .social-media i, .social-media svg {
+      margin-right: 25px;
+    }
+    
+    i {
+      font-size: 35px;
+      color: var(--accent-primary-color);
+      transition: 0.3s;
+    }
+    
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: var(--accent-primary-color);
+      transition: 0.3s;
+    }
+    
+    svg:hover {
+      transform: scale(1.1);
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">
+        <img src="/images/my-avatar.jpeg" width="30" height="30" />
+        <span>AwesomDev @gooddavvy</span>
+      </a>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger">☰</label>
+        <div class="menu">
+          <li><a href="/#about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li class="nav-dropdown">
+            <a href="/#contact">Contact</a>
+            <ul class="dropdown">
+              <li><a href="https://github.com/gooddavvy" target="_blank">GitHub</a></li>
+              <li><a href="https://replit.com/@GoodnessDavid" target="_blank">Replit</a></li>
+              <li><a href="https://codepen.io/gooddavvy" target="_blank">CodePen</a></li>
+              <li><a href="https://codesandbox.io/u/gooddavvy" target="_blank">CodeSandbox</a></li>
+              <li><a href="mailto:gooddavvy@gmail.com" target="_blank">Email</a></li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <main>
+        <h1>Whoops!</h1>
+        <p>wannabe couldn't find the page on my portfolio that you were looking for. Sorry about that!</p>
+        <button class="btn-secondary" onclick="location.href = '/'">Return Home</button>
+    </main>
+    <div class="footer">&copy; <span class="date"></span> <a href="https://github.com/gooddavvy" target="_blank">AwesomDev @gooddavvy</a></div>
+    <script>
+      var date = new Date();
+      var dateEl = document.querySelector(".date");
+      dateEl.textContent = date.getFullYear();
+    </script>
+    <script src="typewriter.js"></script>
+  </body>
+</html>
