@@ -79,7 +79,7 @@
         projectsEl.innerHTML += `
           <a href="${url}" target="_blank">
            <div class="card">
-             ${image !== "no-image" && `<img src=${image} alt="alt text" />`}
+             ${image !== "no-image" ? `<img src=${image} alt="alt text" />` : ""}
              <h2 class="title">
                <span>${name}</span>
                ${badges.map(badge => { return `<span class="badge">${badge}</span>`; })}
