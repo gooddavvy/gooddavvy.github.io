@@ -68,7 +68,6 @@ li {
     padding: 0px;
     text-align: center;
     margin: 30px auto;
-    position: sticky;
 }
 
 .navbar {
@@ -79,6 +78,7 @@ li {
     background: linear-gradient(90deg, var(--accent-primary-color), var(--accent-secondary-color));
     color: var(--foreground-secondary-color);
     box-shadow: var(--accent-secondary-color) 0px 1px 15px;
+    position: sticky !important;
 }
 
 .nav-links a {
