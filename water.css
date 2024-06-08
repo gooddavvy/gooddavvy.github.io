@@ -45,6 +45,16 @@ span {
     box-sizing: border-box;
 }
 
+.custom-cursor {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: white !important;
+    position: fixed !important;
+    z-index: 9999 !important;
+    pointer-events: none !important;
+}
+
 li {
     list-style: none;
 }
