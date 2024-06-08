@@ -46,8 +46,8 @@ span {
 }
 
 .custom-cursor {
-    width: 20px !important;
-    height: 20px !important;
+    width: 10px !important;
+    height: 10px !important;
     border-radius: 50% !important;
     background-color: white !important;
     position: fixed !important;
@@ -68,7 +68,7 @@ li {
     padding: 0px;
     text-align: center;
     margin: 30px auto;
-
+    position: sticky;
 }
 
 .navbar {
