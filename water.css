@@ -71,11 +71,13 @@ li {
 }
 
 @keyframes popUpDown {
-    from {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
 
-    to {
+    50% {
         transform: translateY(-10px);
     }
 }
