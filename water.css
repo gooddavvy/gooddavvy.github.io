@@ -83,7 +83,7 @@ li {
 }
 
 .popper {
-    animation: popUpDown 3s ease-in-out infinite;
+    animation: popUpDown 1.5s ease-in-out infinite;
 }
 
 .navbar {
