@@ -70,6 +70,16 @@ li {
     margin: 30px auto;
 }
 
+@keyframes popUpDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
 .popper {
     animation: popUpDown 3s ease-in-out infinite;
 }
