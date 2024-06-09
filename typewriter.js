@@ -51,6 +51,6 @@ window.onload = function () {
 
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { animation: flash 2s infinite; padding-right: 5px}";
+    css.innerHTML = ".typewrite > .wrap { animation: flash 2s infinite; padding-right: 5px; }";
     document.body.appendChild(css);
 };

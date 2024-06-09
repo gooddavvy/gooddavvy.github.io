@@ -70,6 +70,10 @@ li {
     margin: 30px auto;
 }
 
+.popper {
+    animation: popUpDown 3s ease-in-out infinite;
+}
+
 .navbar {
     display: flex;
     align-items: center;
