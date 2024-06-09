@@ -18,7 +18,7 @@ Copyright 2022, All Rights Reserved
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body {
